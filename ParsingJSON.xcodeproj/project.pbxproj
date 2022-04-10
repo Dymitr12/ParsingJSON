@@ -13,6 +13,8 @@
 		278D7C6428036DF900E04402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278D7C6228036DF900E04402 /* Main.storyboard */; };
 		278D7C6628036DFA00E04402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278D7C6528036DFA00E04402 /* Assets.xcassets */; };
 		278D7C6928036DFA00E04402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278D7C6728036DFA00E04402 /* LaunchScreen.storyboard */; };
+		278D7C72280378A700E04402 /* NetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D7C71280378A700E04402 /* NetworkDataManager.swift */; };
+		278D7C74280378D500E04402 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D7C73280378D500E04402 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		278D7C6528036DFA00E04402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		278D7C6828036DFA00E04402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		278D7C6A28036DFA00E04402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278D7C71280378A700E04402 /* NetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataManager.swift; sourceTree = "<group>"; };
+		278D7C73280378D500E04402 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,22 @@
 				278D7C5C28036DF900E04402 /* AppDelegate.swift */,
 				278D7C5E28036DF900E04402 /* SceneDelegate.swift */,
 				278D7C6028036DF900E04402 /* ViewController.swift */,
+				278D7C7028036E3D00E04402 /* Networking */,
 				278D7C6228036DF900E04402 /* Main.storyboard */,
 				278D7C6528036DFA00E04402 /* Assets.xcassets */,
 				278D7C6728036DFA00E04402 /* LaunchScreen.storyboard */,
 				278D7C6A28036DFA00E04402 /* Info.plist */,
 			);
 			path = ParsingJSON;
+			sourceTree = "<group>";
+		};
+		278D7C7028036E3D00E04402 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				278D7C73280378D500E04402 /* NetworkService.swift */,
+				278D7C71280378A700E04402 /* NetworkDataManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278D7C74280378D500E04402 /* NetworkService.swift in Sources */,
 				278D7C6128036DF900E04402 /* ViewController.swift in Sources */,
 				278D7C5D28036DF900E04402 /* AppDelegate.swift in Sources */,
+				278D7C72280378A700E04402 /* NetworkDataManager.swift in Sources */,
 				278D7C5F28036DF900E04402 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
